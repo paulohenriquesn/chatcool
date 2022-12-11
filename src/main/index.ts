@@ -3,9 +3,14 @@ dotenv.config()
 
 import {Application} from "@infra/express/Application";
 import {Environment} from "@main/env/Environment";
+import {initContainers} from "../../devops";
 
 const expressServer = new Application().getInstance()
 
-expressServer.listen(Environment.EXPRESS_PORT, () => {
-    console.log(`Express server initialized at port ${Environment.EXPRESS_PORT}`)
+initContainers().then(() => {
+    console.log('Containers initialized!')
+    expressServer.listen(Environment.EXPRESS_PORT, () => {
+        console.log(`Express server initialized at port ${Environment.EXPRESS_PORT}`)
+    })
 })
+
