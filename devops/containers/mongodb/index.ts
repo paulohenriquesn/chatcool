@@ -1,5 +1,4 @@
 import {GenericContainer, StartedTestContainer} from "testcontainers";
-import {MongoConnection} from "@infra/databases/mongodb/Connection";
 
 let mongoContainer: StartedTestContainer
 
