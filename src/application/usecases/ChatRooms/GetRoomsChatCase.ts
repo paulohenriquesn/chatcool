@@ -8,7 +8,7 @@ export class GetRoomsChatCase implements UseCaseInterface<null, OutputGetRoomsCh
         private readonly getRoomsChatRepository: GetRoomsChatRepository.Contract
     ) {}
 
-    async handle(i?: null): Promise<OutputGetRoomsChatCase> {
+    async execute(i?: null): Promise<OutputGetRoomsChatCase> {
         return await this.getRoomsChatRepository.execute()
     }
 }

@@ -5,6 +5,6 @@ import {GetRoomsUseCaseFactory} from "@main/factories/usecases/Chat/GetRoomsUseC
 export type OutputGetRoomsController = Promise<ChatRoom.Entity[]>
 export class GetRoomsController implements ControllerInterface<null, OutputGetRoomsController> {
     async handle(): Promise<OutputGetRoomsController> {
-        return GetRoomsUseCaseFactory.getInstance().handle();
+        return GetRoomsUseCaseFactory.getInstance().execute();
     }
 }

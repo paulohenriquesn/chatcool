@@ -5,6 +5,6 @@ import {AddRoomUseCaseFactory} from "@main/factories/usecases/Chat/AddRoomUseCas
 export type InputAddRoomController = ChatRoom.Domain
 export class AddRoomController implements ControllerInterface<InputAddRoomController, void> {
     async handle(input: InputAddRoomController): Promise<void> {
-        await AddRoomUseCaseFactory.getInstance().handle(input);
+        await AddRoomUseCaseFactory.getInstance().execute(input);
     }
 }

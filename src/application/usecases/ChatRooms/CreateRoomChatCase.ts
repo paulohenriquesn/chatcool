@@ -10,7 +10,7 @@ export class CreateRoomChatCase implements UseCaseInterface<InputCreateRoomChatC
         private readonly createRoomChatRepository: AddRoomChatRepository.Contract
     ) {}
 
-    async handle(input: InputCreateRoomChatCase): Promise<OutputCreateRoomChatCase> {
+    async execute(input: InputCreateRoomChatCase): Promise<OutputCreateRoomChatCase> {
         await this.createRoomChatRepository.execute(input)
     }
 }
