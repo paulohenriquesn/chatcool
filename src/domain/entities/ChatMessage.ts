@@ -1,4 +1,4 @@
-import { AbstractEntity } from "../abstractions/AbstractEntity";
+import { AbstractEntity } from "@application/abstractions/AbstractEntity";
 import { User } from "@domain/entities/User";
 
 export namespace ChatMessage {

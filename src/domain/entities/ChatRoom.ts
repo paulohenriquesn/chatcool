@@ -1,10 +1,11 @@
-import { AbstractEntity } from "../abstractions/AbstractEntity";
+import { AbstractEntity } from "@application/abstractions/AbstractEntity";
+import { User } from "@domain/entities/User";
 
 export namespace ChatRoom {
     export type Domain = {
         name: string;
+        users: User.Entity[];
         limitOfUsers: number;
-        isPrivate: boolean;
         password?: number;
     };
 

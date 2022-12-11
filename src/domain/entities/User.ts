@@ -1,4 +1,4 @@
-import { AbstractEntity } from "../abstractions/AbstractEntity";
+import { AbstractEntity } from "@application/abstractions/AbstractEntity";
 
 export namespace User {
   export type Domain = {
