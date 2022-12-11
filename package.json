@@ -1,0 +1,27 @@
+{
+    "author": "Paulo Henrique",
+    "name": "api",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "dev": "nodemon --watch 'src/**' --exec npx ts-node --transpile-only -r tsconfig-paths/register src/main/index.ts -e ts",
+        "build": "swc src -d build"
+    },
+    "devDependencies": {
+        "@swc/cli": "^0.1.57",
+        "@swc/core": "^1.3.22",
+        "@types/node": "^18.11.13",
+        "@typescript-eslint/eslint-plugin": "^5.0.0",
+        "eslint": "^8.0.1",
+        "eslint-config-standard-with-typescript": "^23.0.0",
+        "eslint-plugin-import": "^2.25.2",
+        "eslint-plugin-n": "^15.0.0",
+        "eslint-plugin-promise": "^6.0.0",
+        "nodemon": "^2.0.20",
+        "prettier": "^2.8.1",
+        "ts-node": "^10.9.1",
+        "tsconfig-paths": "^4.1.1",
+        "typescript": "*"
+    }
+}
