@@ -4,3 +4,4 @@ node_modules
 build
 coverage
 .DS_Store
+yarn-error.log
