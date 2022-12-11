@@ -5,12 +5,18 @@
       "@domain/*": [
         "./src/domain/*"
       ],
+      "@devops/*": [
+        "./devops*"
+       ],
       "@infra/*": [
         "./src/infra/*"
       ],
       "@main/*": [
         "./src/main/*"
       ],
+       "@utils/*": [
+        "./src/utils/*"
+       ],
       "@application/*": [
         "./src/application/*"
       ],

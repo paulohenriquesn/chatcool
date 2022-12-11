@@ -1,7 +1,7 @@
 import {Db, MongoClient} from "mongodb";
 import {Environment} from "@main/env/Environment";
-import {Logger} from "../../../utils/Logger";
-import {getMongoURLContainer} from "../../../../devops/containers/mongodb";
+import {Logger} from "@utils/Logger";
+import {getMongoURLContainer} from "@devops/containers/mongodb";
 
 export class MongoConnection {
     static client: MongoClient

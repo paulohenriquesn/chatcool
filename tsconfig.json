@@ -1,29 +1,59 @@
 {
-  "compilerOptions": {
-    "target": "esnext",
-    "lib": ["esnext", "dom"],
-    "types": ["node"],
-    "module": "commonjs",
-    "allowJs": false,
-    "importHelpers": true,
-    "outDir": "./build",
-    "rootDir": ".",
-    "moduleResolution": "node",
-    "typeRoots": ["./node_modules/@types", "./src/@types"],
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "baseUrl": ".",
-    "strict": true,
-    "paths": {
-      "@domain/*": ["./src/domain/*"],
-      "@infra/*": ["./src/infra/*"],
-      "@data/*": ["./src/data/*"],
-      "@main/*": ["./src/main/*"],
-      "@application/*": ["./src/application/*"],
-      "@tests/*": ["./tests/*"]
-    }
-  },
-  "include": ["src/**/*", "tests/**/*", "families"]
+    "compilerOptions": {
+        "target": "esnext",
+        "lib": [
+            "esnext",
+            "dom"
+        ],
+        "types": [
+            "node"
+        ],
+        "module": "commonjs",
+        "allowJs": false,
+        "importHelpers": true,
+        "outDir": "./build",
+        "rootDir": ".",
+        "moduleResolution": "node",
+        "typeRoots": [
+            "./node_modules/@types",
+            "./src/@types"
+        ],
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "baseUrl": ".",
+        "strict": true,
+        "paths": {
+            "@domain/*": [
+                "./src/domain/*"
+            ],
+            "@infra/*": [
+                "./src/infra/*"
+            ],
+            "@data/*": [
+                "./src/data/*"
+            ],
+            "@main/*": [
+                "./src/main/*"
+            ],
+            "@application/*": [
+                "./src/application/*"
+            ],
+            "@utils/*": [
+                "./src/utils/*"
+            ],
+            "@tests/*": [
+                "./tests/*"
+            ],
+            "@devops/*": [
+                "./devops/*"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*",
+        "tests/**/*",
+        "families"
+    ]
 }

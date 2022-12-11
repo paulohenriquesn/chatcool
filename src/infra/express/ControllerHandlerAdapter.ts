@@ -1,5 +1,5 @@
 import {Request, Response} from "express";
-import {Logger} from "../../utils/Logger";
+import {Logger} from "@utils/Logger";
 import {ControllerInterface} from "@application/interfaces/ControllerInterface";
 
 export const ControllerHandlerAdapter = (factoryMethod: () => ControllerInterface<any, any>) => {
@@ -12,7 +12,8 @@ export const ControllerHandlerAdapter = (factoryMethod: () => ControllerInterfac
         Logger.LogRequest(input)
         try {
             const controller = factoryMethod()
-            return response.status(200).json(await controller.handle(input))
+            const data = await controller.handle(input);
+            return response.status(200).json(data)
         } catch (error) {
             Logger.LogError(error)
             return response.status(500).json(error)

@@ -3,7 +3,7 @@ dotenv.config()
 
 import {Application} from "@infra/express/Application";
 import {Environment} from "@main/env/Environment";
-import {initContainers} from "../../devops";
+import {initContainers} from "@devops/index";
 import {MongoConnection} from "@infra/databases/mongodb/Connection";
 
 const expressServer = new Application().getInstance()
