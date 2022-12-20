@@ -14,6 +14,7 @@ const expressServer = new ExpressApplication().getInstance()
 
 initContainers().then(async () => {
     console.log('Containers initialized!')
+
     await MongoConnection.connect()
     const httpServer = http.createServer(expressServer)
     const sockerServer = new SocketApplication(httpServer)
@@ -22,6 +23,5 @@ initContainers().then(async () => {
         console.log(`Express server initialized at port ${Environment.EXPRESS_PORT}`)
         buildEventsSocket(sockerServer)
     })
-
 })
 

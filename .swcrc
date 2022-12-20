@@ -11,6 +11,9 @@
       "@infra/*": [
         "./src/infra/*"
       ],
+      "@presentation/*": [
+        "./src/presentation/*"
+       ],
       "@main/*": [
         "./src/main/*"
       ],

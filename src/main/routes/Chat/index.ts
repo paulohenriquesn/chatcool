@@ -1,7 +1,7 @@
 import { Router } from 'express'
 import {ControllerHandlerAdapter} from "@infra/express/ControllerHandlerAdapter";
-import {GetRoomsController} from "@main/routes/Chat/controllers/GetRoomsController";
-import {AddRoomController} from "@main/routes/Chat/controllers/AddRoomController";
+import {GetRoomsController} from "@presentation/controllers/GetRoomsController";
+import {AddRoomController} from "@presentation/controllers/AddRoomController";
 
 const ChatRouter = Router();
 

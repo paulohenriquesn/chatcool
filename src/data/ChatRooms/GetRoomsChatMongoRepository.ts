@@ -1,5 +1,5 @@
 import {GetRoomsChatRepository} from "@application/repositories/ChatRooms/GetRoomsChatRepository";
-import {Collection, Db, FindCursor} from "mongodb";
+import {Collection, Db} from "mongodb";
 import {ChatRoom} from "@domain/entities/ChatRoom";
 import {ChatRoomMapper} from "@main/mappers/ChatRoomMapper";
 

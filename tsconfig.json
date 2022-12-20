@@ -43,6 +43,9 @@
             "@utils/*": [
                 "./src/utils/*"
             ],
+            "@presentation/*": [
+                "./src/presentation/*"
+            ],
             "@tests/*": [
                 "./tests/*"
             ],
